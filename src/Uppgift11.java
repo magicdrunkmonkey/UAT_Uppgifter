@@ -4,6 +4,7 @@ public class Uppgift11 {
 
     public static void main(String[] args)
     {
+
         Uppgift11 acces = new Uppgift11();
 
         //Skapa en array med osorterade siffror
