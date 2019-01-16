@@ -1,0 +1,107 @@
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class LektionExempel {
+    Scanner scanner = new Scanner(System.in);
+
+    //Output
+    int tal19 = 1 + 2 * 3 * 3;
+    System.out.println("Hello World!");
+
+    //Input
+   //Scanner scanner = new Scanner(System.in);
+    String s = scanner.nextLine();
+    System.out.println(s);
+    int tal = getInt();
+
+    System.out.println(tal);
+}
+
+public static int getInt() {
+    int tal = 0;
+    try {
+        tal = scanner.nextInt();
+        System.out.println(tal);
+    }catch(InputMismatchException e){
+        System.out.println("Felaktig inmatning!");
+    }
+    return tal;
+}
+
+FUNGERAR Uppgift1
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class LektionExempel {
+    Scanner scanner = new Scanner(System.in);
+
+    //Output
+    int tal19 = 1 + 2 * 3 * 3;
+    System.out.println("Hello World!");
+
+    //Input
+   //Scanner scanner = new Scanner(System.in);
+    String s = scanner.nextLine();
+    System.out.println(s);
+    int tal = getInt();
+
+    System.out.println(tal);
+}
+
+public static int getInt() {
+    int tal = 0;
+    try {
+        tal = scanner.nextInt();
+        System.out.println(tal);
+    }catch(InputMismatchException e){
+        System.out.println("Felaktig inmatning!");
+    }
+    return tal;
+}
+
+Exempel UPPGIFT2
+
+    public static void main(
+
+        while(true){
+         int tal = getInt();
+         if(tal >= 0 && tal <10)
+            {
+                System.out.println("Grattis, i intervallet");
+            return;
+          }
+        }
+
+Exempel UPPGIFT3
+    public static void main(String[] args){
+        String inputText = "";
+        String oldInputText = "";
+
+        while(true){
+            inputText = Main.getString(); //Hämta metoden från Main
+
+
+            if( inputText.equals(oldInputText){
+            return;
+            }
+            oldInputText = inputText;
+       }
+    }
+
+MAX Decimaler
+    double d = 3.3333333
+
+    //Skapa max två decimaler
+    //Reserverar två decimaler innan tingad ypkovertering (INT) och återställer med två decimaler
+    double k = ((int) (d * 100)) / 100.0;
+    System.out.println(d);
+    System.out.println(k);
+
+AVRUNDNING uppåt och neråt
+    double d = 3.3393333
+
+    //Skapa max två decimaler
+    double k = ((int) (d * 100+0.5)) / 100.0;
+
+    System.out.println(d);
+    System.out.println(k);
