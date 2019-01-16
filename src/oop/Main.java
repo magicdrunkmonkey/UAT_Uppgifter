@@ -5,7 +5,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //Skapa objekt
+        //Skapa objekt av Rectangle klassen ( Rectangle.java )
         Rectangle rect = new Rectangle();
         Rectangle rect2 = new Rectangle();
 
@@ -18,7 +18,7 @@ public class Main {
         System.out.println(rect2.getHeight());
 
         System.out.println( rect.getWidth() ); // Skriver ut "noll" om ej definierad men initierad.
-
+        int a = rect.getArea();
 
     }
 }

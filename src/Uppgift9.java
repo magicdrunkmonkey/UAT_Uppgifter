@@ -3,7 +3,7 @@ import java.util.*;
 public class Uppgift9 {
 
     public static void main(String[] args) {
-        ArrayList<String> list=new ArrayList<String>();                 //Creating arrayList
+        ArrayList<String> list = new ArrayList<String>();                 //Creating arrayList
         String compareWord = "";
 
         System.out.print("Mata in en data-sträng: ");
