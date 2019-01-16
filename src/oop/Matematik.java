@@ -4,11 +4,12 @@ public class Matematik {
 
     public static void main(String[] args) {
 
-        Teacher teacher = new Teacher("George", "123456");
+        Teacher teacher = new Teacher("George", "031-123456");
 
-        Course matematik = new Course(10, 92, "Matematik",  teacher);
+        Course matematik = new Course(10, 92, "Matematik",  teacher,
+                            new Adress("Skolspåret","424 31","ANGERED"));
 
-        Adress plats = new Adress("Sandspåret 23", "424 31", "ANGERED");
+        //Adress plats = new Adress("Sandspåret 23", "424 31", "ANGERED");
 
         System.out.println("Pupils: " + matematik.getPupils() );
         System.out.println("Hours: " + matematik.getHours() );
@@ -16,11 +17,17 @@ public class Matematik {
         System.out.println();
 
         System.out.println(matematik.getTeacher().getName().charAt(0));
-
         System.out.println(matematik.getTeacher().getName());
-        System.out.println(plats.getGata());
-        System.out.print(plats.getPostnummer()+" ");
-        System.out.println(plats.getOrt());
+
+        System.out.println(matematik.getAdress().getGata());
+        System.out.print(matematik.getAdress().getPostnummer()+" ");
+        System.out.println(matematik.getAdress().getOrt());
+        System.out.println();
+
+        System.out.println(matematik.getAdress());
+        System.out.println();
+
+        System.out.println(matematik);
 
     }
 }

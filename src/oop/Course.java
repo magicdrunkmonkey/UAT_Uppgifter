@@ -5,14 +5,16 @@ public class Course {
     private int pupils;
     private int hours;
     private String kurs;
-    private Teacher teacher;
+    private Teacher teacher; // Från Teacher class
+    private Adress adress;  // Från Adress class
 
     //Constructor
-    public Course(int pupils, int hours, String kurs, Teacher teacher){
+    public Course(int pupils, int hours, String kurs, Teacher teacher, Adress adress){
         this.pupils = pupils;
         this. hours = hours;
         this. kurs = kurs;
         this.teacher = teacher;
+        this.adress = adress;
     }
 
     //GETTERS
@@ -30,6 +32,10 @@ public class Course {
         return teacher;
     }
 
+    public Adress getAdress() {
+        return adress;
+    }
+
     //SETTERS
     public void setPupils(int pupils) {
         this.pupils = pupils;
@@ -45,5 +51,14 @@ public class Course {
 
     public void setTeacher(Teacher teacher) {
         this.teacher = teacher;
+    }
+
+    public void setAdress(Adress adress) {
+        this.adress = adress;
+    }
+
+    @Override
+    public String toString() {
+        return kurs + "\n" + teacher + "\n" +adress;
     }
 }

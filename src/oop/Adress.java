@@ -36,4 +36,10 @@ public class Adress {
     public void setOrt(String ort) {
         this.ort = ort;
     }
+
+    @Override
+    public String toString() {
+        String s = gata + "\n"+ postnummer +" "+ort;
+        return s;
+    }
 }
