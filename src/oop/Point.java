@@ -6,6 +6,7 @@ public class Point {
     private double y;
 
 
+    //Constructor
     public Point(double x, double y) {
         this.x = x;
         this.y = y;
@@ -17,6 +18,7 @@ public class Point {
         this.y = point.y;
     }
 
+    //Getter och Setter
     public double getX() {
         return x;
     }
@@ -33,6 +35,7 @@ public class Point {
         this.y = y;
     }
 
+    //Default constructor
     @Override
     public String toString() {
         return "Point: " + x + "," + y;

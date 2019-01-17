@@ -1,25 +1,38 @@
 package oop;
 
+import java.util.ArrayList;
+
+import static javax.swing.UIManager.get;
+
 public class Course {
 
-    private int pupils;
+    private int students;
     private int hours;
     private String kurs;
     private Teacher teacher; // Från Teacher class
     private Adress adress;  // Från Adress class
+    private ArrayList<Student> studentsList;
 
     //Constructor
-    public Course(int pupils, int hours, String kurs, Teacher teacher, Adress adress){
-        this.pupils = pupils;
+    public Course(int students, int hours, String kurs, Teacher teacher, Adress adress){
+        this.students = students;
         this. hours = hours;
         this. kurs = kurs;
         this.teacher = teacher;
         this.adress = adress;
+        studentsList = new ArrayList<>(); ///Behöver ej this. då det är ensamt variabel
     }
 
+    public void addStudent(Student student){
+
+        studentsList.add(student);
+
+    }
     //GETTERS
-    public int getPupils() {
-        return pupils;
+
+
+    public int getStudents() {
+        return students;
     }
     public int getHours() {
         return hours;
@@ -37,8 +50,8 @@ public class Course {
     }
 
     //SETTERS
-    public void setPupils(int pupils) {
-        this.pupils = pupils;
+    public void setStudents(int students) {
+        this.students = students;
     }
 
     public void setHours(int hours) {
@@ -59,6 +72,15 @@ public class Course {
 
     @Override
     public String toString() {
-        return kurs + "\n" + teacher + "\n" +adress;
+        String s = kurs + "\n" + teacher + "\n" +adress + "\n";
+
+        StringBuilder stringBuilder = new StringBuilder();
+
+        int size = studentsList.size();
+        for(int i = 0 ; i<size ; i++){
+            stringBuilder.append( studentsList.get(i) + "\n");
+        }
+
+        return s + stringBuilder.toString();
     }
 }
