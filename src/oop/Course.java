@@ -1,6 +1,7 @@
 package oop;
 
 import java.util.ArrayList;
+import java.util.function.Consumer;
 
 import static javax.swing.UIManager.get;
 
@@ -82,5 +83,30 @@ public class Course {
         }
 
         return s + stringBuilder.toString();
+    }
+
+    public void setAllStudentGrades(String g) {
+       // for (int i = 0; i < studentsList.size(); i++) {
+       //     studentsList.get().setGrade(g);
+       // }
+
+        //For each versionen
+        for (Student s: studentsList) {
+            s.setGrade(g);
+        }
+
+        /*
+        //alternativt with
+        studentsList.forEach(new Consumer<Student>() {
+            @Override
+            public void accept(Student student) {
+                student.setGrade(g);
+            }
+        });
+
+        //alternativt with lambda expression
+        studentsList.forEach(student -> student.setGrade(g));
+        */
+
     }
 }

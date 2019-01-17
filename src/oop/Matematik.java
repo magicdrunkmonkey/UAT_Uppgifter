@@ -12,6 +12,7 @@ public class Matematik {
         matematik.addStudent( new Student("Jonas","555-345"));
         matematik.addStudent( new Student("Kallw", "234-678"));
 
+        matematik.setAllStudentGrades("G");
 
         //Adress plats = new Adress("Sandspåret 23", "424 31", "ANGERED");
 

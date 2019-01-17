@@ -7,15 +7,17 @@ public class Person {
     private String kön;
     private int längd;
     Hus husen;
+    Bil bilar;
 
     //Constructor
-    public Person(String namn, String sysselsättning, int ålder, String kön, int längd, Hus hus) {
+    public Person(String namn, String sysselsättning, int ålder, String kön, int längd, Hus hus, Bil bil) {
         this.namn = namn;
         this.sysselsättning = sysselsättning;
         this.ålder = ålder;
         this.kön = kön;
         this.längd = längd;
         this.husen = hus;
+        this.bilar = bil;
     }
 
     //Getter och Setter
@@ -62,6 +64,6 @@ public class Person {
     @Override
     public String toString() {
         return "Namn: "+ namn + " Sysselsättning: " + sysselsättning + " Ålder: " + ålder + " Kön: " +
-                kön + " Längd: " + längd + "\n" + husen + "\n";
+                kön + " Längd: " + längd + "\n" + husen + "\n" + bilar + "\n";
     }
 }
