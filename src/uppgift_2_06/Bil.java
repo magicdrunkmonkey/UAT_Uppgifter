@@ -4,12 +4,14 @@ public class Bil {
     private String model;
     private int value;
     private int kmUsed;
-    private int nextValue;
+    private double nextValue;
 
-    nextValue = valueLoss(value){
-        this.value - (this.value * 0.20);
+
+
+    public double valueLoss(int value) {
+        nextValue = value - (value * 0.20);
+        return nextValue;
     }
-
 
 
     //Constructor
@@ -20,6 +22,14 @@ public class Bil {
     }
 
     //Setter and Getter
+    public double getNextValue() {
+        return nextValue;
+    }
+
+    public void setNextValue(double nextValue) {
+        this.nextValue = nextValue;
+    }
+
     public String getModel() {
         return model;
     }
@@ -46,6 +56,9 @@ public class Bil {
 
     @Override
     public String toString() {
-        return "Car model: " + model+ ", Car value: " + value + ", km-count: " + kmUsed ;
+        return "Car model: " + model+
+                ", Car value: " + value +
+                ", km-count: " + kmUsed +
+                ", Value loss 20%: " + valueLoss(value);
     }
 }
