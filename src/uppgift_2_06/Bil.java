@@ -4,9 +4,11 @@ public class Bil {
     private String model;
     private int value;
     private int kmUsed;
-    private int currentValue;
+    private int nextValue;
 
-    currentValue = valueLoss(value);
+    nextValue = valueLoss(value){
+        this.value - (this.value * 0.20);
+    }
 
 
 

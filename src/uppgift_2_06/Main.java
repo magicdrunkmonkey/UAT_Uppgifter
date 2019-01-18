@@ -13,7 +13,6 @@ public class Main {
         husen.add(new Hus(130,3,2500, 1983, "Skolspåret 25"));
         husen.add(new Hus(60, 6, 5000, 1984, "Skolspåret 29"));
 
-
         bilar.add(new Bil("Volvo", 23000, 16450));
         bilar.add(new Bil("Prius", 2016,12000));
 

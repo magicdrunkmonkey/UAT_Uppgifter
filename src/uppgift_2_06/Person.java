@@ -6,8 +6,11 @@ public class Person {
     private int ålder;
     private String kön;
     private int längd;
+    private int nextAge;
     Hus husen;
     Bil bilar;
+
+
 
     //Constructor
     public Person(String namn, String sysselsättning, int ålder, String kön, int längd, Hus hus, Bil bil) {
