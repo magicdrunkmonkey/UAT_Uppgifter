@@ -59,6 +59,6 @@ public class Bil {
         return "Car model: " + model+
                 ", Car value: " + value +
                 ", km-count: " + kmUsed +
-                ", Value loss 20%: " + valueLoss(value);
+                ", Yearly 20% valueloss: " + valueLoss(value);
     }
 }

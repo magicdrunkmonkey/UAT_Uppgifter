@@ -7,6 +7,12 @@ public class Hus {
     private int värde;
     private int byggnadsår;
     private String adress;
+    private double husValue;
+
+    public double valueLoss(int value) {
+        husValue = value - (value * 0.05);
+        return husValue;
+    }
 
     //Constructor
     public Hus(int yta, int våningar, int värde, int byggnadsår, String adress) {
@@ -60,7 +66,11 @@ public class Hus {
 
     @Override
     public String toString() {
-        return "House: " + yta + " m², " + våningar + " floor(s), " + värde + " kr, " + byggnadsår + ", " + adress;
+        return "House: " +
+                yta + " m², " +
+                våningar + " floor(s), " +
+                värde + " kr, " + byggnadsår + ", " +
+                adress + ", Yearly 5% valueloss: " + valueLoss(värde);
 
     }
 }

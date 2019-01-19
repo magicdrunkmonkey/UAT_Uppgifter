@@ -3,20 +3,23 @@ package uppgift_2_06;
 public class Person {
     private String namn;
     private String sysselsättning;
-    private int ålder;
+    private int age;
     private String kön;
     private int längd;
     private int nextAge;
     Hus husen;
     Bil bilar;
 
-
+    public int ageOlding(int age){
+        nextAge = age + 1;
+        return nextAge;
+    }
 
     //Constructor
     public Person(String namn, String sysselsättning, int ålder, String kön, int längd, Hus hus, Bil bil) {
         this.namn = namn;
         this.sysselsättning = sysselsättning;
-        this.ålder = ålder;
+        this.age = ålder;
         this.kön = kön;
         this.längd = längd;
         this.husen = hus;
@@ -40,12 +43,12 @@ public class Person {
         this.sysselsättning = sysselsättning;
     }
 
-    public int getÅlder() {
-        return ålder;
+    public int getAge() {
+        return age;
     }
 
-    public void setÅlder(int ålder) {
-        this.ålder = ålder;
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public String getKön() {
@@ -66,7 +69,13 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Namn: "+ namn + " Sysselsättning: " + sysselsättning + " Ålder: " + ålder + " Kön: " +
-                kön + " Längd: " + längd + "\n" + husen + "\n" + bilar + "\n";
+        return "Namn: "+ namn +
+                " Sysselsättning: " + sysselsättning +
+                " , Ålder: " + age +
+                " , Kön: " + kön +
+                " , Längd: " + längd +
+                " , Ålder nästa år: " + ageOlding(age) +
+                "\n" + husen +
+                "\n" + bilar + "\n";
     }
 }

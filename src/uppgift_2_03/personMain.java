@@ -11,7 +11,7 @@ public class personMain {
         person.setLängd(173);
         person.setNamn("Albert Einstein");
         person.setSysselsättning("Professor");
-        person.setÅlder(73);
+        person.setAge(73);
         */
 
         System.out.println("Han är en " + person.getKön());
