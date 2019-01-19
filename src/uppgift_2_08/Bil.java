@@ -1,4 +1,4 @@
-package uppgift_2_06;
+package uppgift_2_08;
 
 public class Bil {
     private String model;

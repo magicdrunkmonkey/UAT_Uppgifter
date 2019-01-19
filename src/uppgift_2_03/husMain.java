@@ -7,7 +7,7 @@ public class husMain {
 
         /*
         bostad.setYta(60);
-        bostad.setVärde(5000);
+        bostad.setValue(5000);
         bostad.setAdress("Skolspåret 29");
         bostad.setByggnadsår(1976);
         bostad.setVåningar(6);

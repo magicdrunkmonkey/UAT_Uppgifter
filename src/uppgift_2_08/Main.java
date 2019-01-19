@@ -1,4 +1,4 @@
-package uppgift_2_06;
+package uppgift_2_08;
 
 import java.util.ArrayList;
 import java.util.Scanner;
