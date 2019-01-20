@@ -4,7 +4,7 @@ public class Person {
     private String firstName;
     private String lastName;
     private int age;
-    private String name;
+    //private String name;
 
     /*
     public void fullName(String firstName, String lastName){
@@ -17,7 +17,7 @@ public class Person {
     public Person(String firstName, String lastName, int age) {
         this.firstName = firstName;
         this.lastName = lastName;
-        //Checking age paramater if between 0 and 100
+        //Checking age parameter if between 0 and 100
         if(age<0 || age>100){
             age = 20;
         }
@@ -25,17 +25,15 @@ public class Person {
     }
 
     //Getters & Setters
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String firstName, String lastName) {
+    public String setName(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
+        return firstName +" "+lastName;
     }
 
-    public void setName(String firstName) {
+    public String setName(String firstName) {
         this.firstName = firstName;
+        return firstName;
     }
 
     public String getFirstName() {
@@ -65,9 +63,9 @@ public class Person {
     @Override
     public String toString() {
 
-        return "First name: " + firstName + "\n" +
-                "Last name: " + lastName + "\n" +
-                "Age: " + age + "\n" +
-                "Test: " + name + "\n";
+        return "First name: " + firstName + "\n"
+                +"Last name: " + lastName + "\n"
+                +"Age: " + age + "\n"
+                /*+"Test: " + setName("Peter","Strand") + "\n"*/;
     }
 }
