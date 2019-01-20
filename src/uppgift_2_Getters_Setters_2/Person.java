@@ -6,25 +6,25 @@ public class Person {
     private int age;
     private String name;
 
-
-
+    /*
+    public void fullName(String firstName, String lastName){
+        setName(firstName, lastName);
+        return;
+    }
+    */
 
     //Constructor
     public Person(String firstName, String lastName, int age) {
         this.firstName = firstName;
         this.lastName = lastName;
-        //Checking age is between 0 and 100
+        //Checking age paramater if between 0 and 100
         if(age<0 || age>100){
             age = 20;
         }
         this.age = age;
-
-
     }
 
     //Getters & Setters
-
-
     public String getName() {
         return name;
     }
@@ -64,6 +64,7 @@ public class Person {
 
     @Override
     public String toString() {
+
         return "First name: " + firstName + "\n" +
                 "Last name: " + lastName + "\n" +
                 "Age: " + age + "\n" +
