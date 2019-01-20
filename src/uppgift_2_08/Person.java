@@ -10,6 +10,7 @@ public class Person {
     Hus husen;
     Bil bilar;
 
+
     public int ageOlding(int age){
         nextAge = age + 1;
         setAge(nextAge);
