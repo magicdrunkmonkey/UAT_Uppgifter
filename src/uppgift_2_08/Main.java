@@ -29,6 +29,7 @@ public class Main {
                 System.out.println(persons.get(i));
             }
 
+
             Scanner s = new Scanner(System.in);
             System.out.println("Press <ENTER> to continue");
             s.nextLine();
