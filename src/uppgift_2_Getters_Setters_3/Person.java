@@ -4,7 +4,7 @@ public class Person {
     private String firstName;
     private String lastName;
     private int age;
-    private int personCount;
+    private static int personCount;
 
 
     //Constructor
@@ -16,12 +16,12 @@ public class Person {
             age = 20;
         }
         this.age = age;
-        this.personCount++;
+        //this.personCount++;
     }
 
     //Getters & Setters
     public int getPersonCount() {
-        return personCount;
+        return ++personCount;
     }
 
     public String setName(String firstName, String lastName) {
@@ -61,10 +61,10 @@ public class Person {
 
     @Override
     public String toString() {
-        personCount++;
-        return "Person: " + getPersonCount() + "\n"
-                +"First name: " + firstName + "\n"
+
+        return "First name: " + firstName + "\n"
                 +"Last name: " + lastName + "\n"
-                +"Age: " + age + "\n";
+                +"Age: " + age + "\n"
+                +"Person nummer: " + getPersonCount() + "\n";
     }
 }

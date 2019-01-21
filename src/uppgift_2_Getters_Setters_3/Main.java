@@ -10,14 +10,12 @@ public class Main {
         persons.add(new Person("George", "Sydby", 44));
         persons.add(new Person("Marie","Sydby", 32));
         persons.add(new Person("Janette","Sydby",62));
+        persons.add(new Person("Kerim","Sydby",68 ));
 
         for (int i = 0; i < persons.size(); i++) {
             System.out.println(persons.get(i));
         }
-
-
-
-
+        //System.out.println("Antal personer: " + Person.);
 
     }
 }
