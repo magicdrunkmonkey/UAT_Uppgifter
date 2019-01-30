@@ -16,23 +16,23 @@ public class Person {
             age = 20;
         }
         this.age = age;
-        //this.personCount++;
+        ++personCount;
     }
 
     //Getters & Setters
     public int getPersonCount() {
-        return ++personCount;
+        return personCount;
+    }
+
+    public String setName(String firstName) {
+        this.firstName = firstName;
+        return firstName;
     }
 
     public String setName(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
         return firstName +" "+lastName;
-    }
-
-    public String setName(String firstName) {
-        this.firstName = firstName;
-        return firstName;
     }
 
     public String getFirstName() {
